@@ -1,0 +1,61 @@
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+
+    <title>LyricsDo</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="intro col-12">
+          <h1>LyricsDo</h1>
+          <div>
+            <div class="border1"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-12">
+          <input
+            id="userInput"
+            type="text"
+            placeholder="Enter artist or song name..."
+            maxlength="27"
+          />
+          <button id="enter">Search</button>
+        </div>
+      </div>
+
+      <!-- Empty List -->
+      <div class="row" id="songList">
+        <div class="listItems col-12">
+          <ul class="col-12 offset-0 col-sm-8 offset-sm-2" id="songListUl"></ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- Show Lyrics -->
+    <div class="lyricsDiv">
+      <div class="col-12">
+        <p id="lyrics"></p>
+      </div>
+    </div>
+    <script type="text/javascript" src="scripts.js"></script>
+  </body>
+</html>
